@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms in HTML</title>
+  </head>
+  <body>
+    <form action="">
+      <!-- Implicit Label-->
+      <label>Full Name: <input type="text" placeholder="Ayan Khan" /> </label
+      ><br /><br />
+      <!-- Explicit Label -->
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="ayankhan@gmail.com"
+        minlength="10"
+        maxlength="30"
+        required
+      />
+      <br /><br />
+      <button class="button">Proceed Next</button>
+      <button type="reset">Reset Form</button>
+      <button type="submit">Submit Form</button>
+    </form>
+
+    <script>
+      const btn = document.querySelector(".button");
+      btn.addEventListener("click", () =>
+        alert("Are you ready to proceed further?"),
+      );
+    </script>
+  </body>
+</html>
